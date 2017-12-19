@@ -9,21 +9,25 @@
     tools:context="com.jorgequijano.android.imc.MainActivity">
 
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Proporcione el peso:"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/texto_etiqueta_peso"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_peso"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione la estatura:"/>
+        android:text= "@string/texto_etiqueta_estatura"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_estatura"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,21 +37,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calcular"/>
-        
+            android:text="@string/texto_boton_calcular"
+            android:id="@+id/boton_calcular"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Limpiar"/>
+            android:text="@string/texto_boton_limpiar"
+            android:id="@+id/boton_limpiar"/>
+
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="El Índice de Masa Corporal (IMC) es:"/>
+        android:text= "El indice de masa corporal (IMC) es "/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0.0"/>
+        android:text= "@string/texto_etiqueta_resultado"
+        android:id="@+id/etiqueta_imc"/>
 
 </LinearLayout>
